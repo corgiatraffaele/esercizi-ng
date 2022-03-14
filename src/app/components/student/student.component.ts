@@ -12,10 +12,12 @@ export class StudentComponent implements OnInit {
     id: 1,
     name: 'Raffaele'
   }
+  selectedStudent: Student | undefined;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
