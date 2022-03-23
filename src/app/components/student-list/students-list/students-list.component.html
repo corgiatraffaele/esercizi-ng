@@ -1,8 +1,12 @@
 <div class="container">
     <div *ngFor="let element of  students">
 
+        <p>id: {{element.id}}</p>
+        <div><span>Name: </span> {{element.name}}</div>
+
         <div>
-            <label for=""></label>
+            <label for="name">Name:</label>
+            <input id="name" [(ngModel)]="element.name">
         </div>
     </div>
 </div>
